@@ -46,10 +46,10 @@ def self.artist_count
     if genre_count[artist]
       genre_count[artist] += 1
     else
-      genre_count[genre] = 1
+      genre_count[artist] = 1
   end
 end
-  return genre_count
+  return artist_count
 end
 
 end
