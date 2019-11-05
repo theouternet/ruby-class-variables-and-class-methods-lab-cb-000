@@ -28,9 +28,12 @@ class Song
       @@genres.uniq!
   end
 
-def self.genre_count each do |genre|
+def self.genre_count 
+  genre_count = {}
+  @@genres.each do |genre|
+  genre_count << genre
   
   
-  return @@genres.count()
+  return genre_count
 
 end
